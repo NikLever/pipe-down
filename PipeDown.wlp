@@ -1,0 +1,2376 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "translation": [
+                -3.2591099,
+                1.8000135,
+                1.7569212
+            ],
+            "rotation": [
+                0.0,
+                -0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scale": [
+                0.9999998,
+                1.0,
+                0.9999998
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "319",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ],
+            "translation": [
+                0.1404262,
+                -2.427627,
+                0.9497401
+            ],
+            "rotation": [
+                0.0,
+                0.0709868,
+                0.0,
+                0.9974772
+            ],
+            "scale": [
+                0.9999997,
+                1.0,
+                0.9999997
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "319",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "319",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.001
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                3.0,
+                -1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.001
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                3.0,
+                2.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "58": {
+            "name": "Test"
+        },
+        "125": {
+            "link": {
+                "name": "Pipe_Bend(Glass)",
+                "file": "models\\pipedown.glb"
+            },
+            "parent": "58",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "83"
+                    }
+                },
+                {
+                    "active": false
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "triangleMesh",
+                        "triangleMesh": {
+                            "mesh": "88",
+                            "scaling": [
+                                0.1,
+                                0.1,
+                                0.1
+                            ]
+                        },
+                        "static": true
+                    }
+                }
+            ]
+        },
+        "126": {
+            "link": {
+                "name": "Ball",
+                "file": "models\\pipedown.glb"
+            },
+            "parent": "58",
+            "translation": [
+                0.3998237,
+                0.9601403,
+                -0.272978
+            ],
+            "rotation": [
+                0.7071068,
+                0.0,
+                0.0,
+                0.7071067
+            ],
+            "scale": [
+                0.0967999,
+                0.0967992,
+                0.0967992
+            ],
+            "components": [
+                null,
+                {
+                    "type": "physx",
+                    "active": false
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "Ball"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ]
+        },
+        "187": {
+            "link": {
+                "name": "BoxOutline",
+                "file": "models\\AllObjects.fbx"
+            },
+            "parent": "316",
+            "translation": [
+                -7.9695925,
+                8.0,
+                6.9754505
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "188": {
+            "link": {
+                "name": "BoxChrome",
+                "file": "models\\AllObjects.fbx"
+            },
+            "parent": "316",
+            "translation": [
+                -21.2636165,
+                0.0,
+                39.0625686
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "189": {
+            "link": {
+                "name": "Cup",
+                "file": "models\\AllObjects.fbx"
+            },
+            "parent": "316",
+            "translation": [
+                -17.6276092,
+                0.0,
+                12.422039
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "190": {
+            "link": {
+                "name": "BallSucker",
+                "file": "models\\AllObjects.fbx"
+            },
+            "parent": "316",
+            "translation": [
+                0.0,
+                15.1441526,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "191": {
+            "link": {
+                "name": "Arrow",
+                "file": "models\\AllObjects.fbx"
+            },
+            "parent": "316",
+            "translation": [
+                15.5934705,
+                0.0,
+                27.4001808
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "192": {
+            "link": {
+                "name": "Ball",
+                "file": "models\\AllObjects.fbx"
+            },
+            "parent": "316",
+            "translation": [
+                0.0,
+                16.3999958,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.9679998,
+                0.9679998,
+                0.9679998
+            ]
+        },
+        "193": {
+            "link": {
+                "name": "Pipe_Bend(Glass)",
+                "file": "models\\AllObjects.fbx"
+            },
+            "parent": "316",
+            "translation": [
+                0.0,
+                -16.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "194": {
+            "link": {
+                "name": "Pipe_Straight(Glass)",
+                "file": "models\\AllObjects.fbx"
+            },
+            "parent": "316",
+            "translation": [
+                5000.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "316": {
+            "name": "Empty",
+            "translation": [
+                500.0,
+                0.0,
+                0.0
+            ]
+        },
+        "317": {
+            "name": "CursorLeft",
+            "parent": "319",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray left"
+                    }
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "rayCastMode": "collision",
+                        "collisionGroup": 0,
+                        "handedness": "left"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "318": {
+            "name": "CursorRight",
+            "parent": "319",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    }
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "collisionGroup": 0,
+                        "handedness": "right"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "319": {
+            "name": "TrackedSpace",
+            "parent": "14",
+            "translation": [
+                0.0,
+                1.75,
+                0.0
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "Untitled.007",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "88": {
+            "link": {
+                "name": "Untitled.006",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "Untitled.001",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "Untitled.009",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "Untitled.009.0",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "Untitled.009.1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "Untitled.009.2",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "Untitled.009.3",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "95": {
+            "link": {
+                "name": "Untitled",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "96": {
+            "link": {
+                "name": "Untitled.010",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "97": {
+            "link": {
+                "name": "Untitled.010-uv1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "98": {
+            "link": {
+                "name": "Untitled.010-uv2",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "99": {
+            "link": {
+                "name": "Untitled.010.0",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "100": {
+            "link": {
+                "name": "Untitled.010-uv1.0",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "101": {
+            "link": {
+                "name": "Untitled.010-uv2.0",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "102": {
+            "link": {
+                "name": "Untitled.010.1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "103": {
+            "link": {
+                "name": "Untitled.010-uv1.1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "104": {
+            "link": {
+                "name": "Untitled.010-uv2.1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "105": {
+            "link": {
+                "name": "Untitled.002",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "106": {
+            "link": {
+                "name": "Untitled.005",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "107": {
+            "link": {
+                "name": "Untitled.005.0",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "108": {
+            "link": {
+                "name": "Untitled.005.1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "109": {
+            "link": {
+                "name": "Untitled.008",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "110": {
+            "link": {
+                "name": "Untitled.003",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "111": {
+            "link": {
+                "name": "Untitled.003.0",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "112": {
+            "link": {
+                "name": "Untitled.004",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "113": {
+            "link": {
+                "name": "Untitled.004.0",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "157": {
+            "link": {
+                "name": "Untitled.007",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "158": {
+            "link": {
+                "name": "Untitled.006",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "159": {
+            "link": {
+                "name": "Untitled.001",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "160": {
+            "link": {
+                "name": "Untitled.009",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "161": {
+            "link": {
+                "name": "Untitled.009.0",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "162": {
+            "link": {
+                "name": "Untitled.009.1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "163": {
+            "link": {
+                "name": "Untitled.009.2",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "164": {
+            "link": {
+                "name": "Untitled.009.3",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "165": {
+            "link": {
+                "name": "Untitled",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "166": {
+            "link": {
+                "name": "Untitled.010",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "167": {
+            "link": {
+                "name": "Untitled.010-uv1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "168": {
+            "link": {
+                "name": "Untitled.010-uv2",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "169": {
+            "link": {
+                "name": "Untitled.010.0",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "170": {
+            "link": {
+                "name": "Untitled.010-uv1.0",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "171": {
+            "link": {
+                "name": "Untitled.010-uv2.0",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "172": {
+            "link": {
+                "name": "Untitled.010.1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "173": {
+            "link": {
+                "name": "Untitled.010-uv1.1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "174": {
+            "link": {
+                "name": "Untitled.010-uv2.1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "175": {
+            "link": {
+                "name": "Untitled.002",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "176": {
+            "link": {
+                "name": "Untitled.005",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "177": {
+            "link": {
+                "name": "Untitled.005.0",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "178": {
+            "link": {
+                "name": "Untitled.005.1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "179": {
+            "link": {
+                "name": "Untitled.008",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "180": {
+            "link": {
+                "name": "Untitled.003",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "181": {
+            "link": {
+                "name": "Untitled.003.0",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "182": {
+            "link": {
+                "name": "Untitled.004",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "183": {
+            "link": {
+                "name": "Untitled.004.0",
+                "file": "models\\AllObjects.fbx"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "font": "55"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "66": {
+            "link": {
+                "name": "Default_1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "Proxy_1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "Proxy",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "BoxRim",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "BoxGlassBase",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "BoxGlassZ",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "BoxGlassX",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "BoxGlassTop",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "74": {
+            "link": {
+                "name": "Box",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "RimsGlass_3",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "76": {
+            "link": {
+                "name": "Crate_1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "77": {
+            "link": {
+                "name": "CrateInner_1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "78": {
+            "link": {
+                "name": "RimsGlass_2",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "79": {
+            "link": {
+                "name": "Arrow_surf",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "80": {
+            "link": {
+                "name": "Arrow2",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "81": {
+            "link": {
+                "name": "Arrow3",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "82": {
+            "link": {
+                "name": "Ball_surf",
+                "file": "models\\pipedown.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.0,
+                    0.5019608,
+                    0.7529411,
+                    1.0
+                ],
+                "specularColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.2509804
+                ],
+                "fogColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "shininess": 11
+            }
+        },
+        "83": {
+            "link": {
+                "name": "RimsGlass_1",
+                "file": "models\\pipedown.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        },
+        "84": {
+            "link": {
+                "name": "Glass_1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "85": {
+            "link": {
+                "name": "Glass",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "RimsGlass",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "127": {
+            "name": "sky",
+            "pipeline": "54",
+            "Sky": {
+                "texture": "129"
+            }
+        },
+        "136": {
+            "link": {
+                "name": "Default_1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "137": {
+            "link": {
+                "name": "Proxy_1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "138": {
+            "link": {
+                "name": "Proxy",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "139": {
+            "link": {
+                "name": "BoxRim",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "140": {
+            "link": {
+                "name": "BoxGlassBase",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "141": {
+            "link": {
+                "name": "BoxGlassZ",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "142": {
+            "link": {
+                "name": "BoxGlassX",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "143": {
+            "link": {
+                "name": "BoxGlassTop",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "144": {
+            "link": {
+                "name": "Box",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "145": {
+            "link": {
+                "name": "RimsGlass_3",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "146": {
+            "link": {
+                "name": "Crate_1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "147": {
+            "link": {
+                "name": "CrateInner_1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "148": {
+            "link": {
+                "name": "RimsGlass_2",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "149": {
+            "link": {
+                "name": "Arrow_surf",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "150": {
+            "link": {
+                "name": "Arrow2",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "151": {
+            "link": {
+                "name": "Arrow3",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "152": {
+            "link": {
+                "name": "Ball_surf",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "153": {
+            "link": {
+                "name": "RimsGlass_1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "154": {
+            "link": {
+                "name": "Glass_1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "155": {
+            "link": {
+                "name": "Glass",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "156": {
+            "link": {
+                "name": "RimsGlass",
+                "file": "models\\AllObjects.fbx"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured.frag",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured.frag",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "PipeDown",
+            "version": [
+                0,
+                9,
+                5
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js/"
+            ]
+        },
+        "physx": {
+            "enable": true
+        },
+        "rendering": {
+            "sky": {
+                "enabled": false,
+                "material": "127"
+            },
+            "compressedTextureAtlasSize": [
+                8192,
+                4096
+            ],
+            "clearColor": [
+                0.395617,
+                0.6615781,
+                0.9607843,
+                1.0
+            ]
+        },
+        "runtime": {
+            "visualizeColliders": false,
+            "visualizePhysX": false
+        }
+    },
+    "animations": {
+        "195": {
+            "link": {
+                "name": "Proxy_Cup|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "196": {
+            "link": {
+                "name": "Proxy_Cup|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "197": {
+            "link": {
+                "name": "Proxy_Cup|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "198": {
+            "link": {
+                "name": "Proxy_Cup|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "199": {
+            "link": {
+                "name": "Proxy_Cup|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "200": {
+            "link": {
+                "name": "Proxy_Cup|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "201": {
+            "link": {
+                "name": "Proxy_Cup|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "202": {
+            "link": {
+                "name": "Proxy_Cup|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "203": {
+            "link": {
+                "name": "Proxy_Cup|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "204": {
+            "link": {
+                "name": "Proxy_Cup|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "205": {
+            "link": {
+                "name": "Proxy_Cup|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "206": {
+            "link": {
+                "name": "Proxy_Bend|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "207": {
+            "link": {
+                "name": "Proxy_Bend|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "208": {
+            "link": {
+                "name": "Proxy_Bend|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "209": {
+            "link": {
+                "name": "Proxy_Bend|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "210": {
+            "link": {
+                "name": "Proxy_Bend|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "211": {
+            "link": {
+                "name": "Proxy_Bend|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "212": {
+            "link": {
+                "name": "Proxy_Bend|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "213": {
+            "link": {
+                "name": "Proxy_Bend|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "214": {
+            "link": {
+                "name": "Proxy_Bend|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "215": {
+            "link": {
+                "name": "Proxy_Bend|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "216": {
+            "link": {
+                "name": "Proxy_Bend|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "217": {
+            "link": {
+                "name": "Proxy_Straight|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "218": {
+            "link": {
+                "name": "Proxy_Straight|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "219": {
+            "link": {
+                "name": "Proxy_Straight|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "220": {
+            "link": {
+                "name": "Proxy_Straight|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "221": {
+            "link": {
+                "name": "Proxy_Straight|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "222": {
+            "link": {
+                "name": "Proxy_Straight|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "223": {
+            "link": {
+                "name": "Proxy_Straight|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "224": {
+            "link": {
+                "name": "Proxy_Straight|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "225": {
+            "link": {
+                "name": "Proxy_Straight|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "226": {
+            "link": {
+                "name": "Proxy_Straight|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "Proxy_Straight|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "BoxOutline|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "229": {
+            "link": {
+                "name": "BoxOutline|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "230": {
+            "link": {
+                "name": "BoxOutline|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "BoxOutline|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "232": {
+            "link": {
+                "name": "BoxOutline|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "233": {
+            "link": {
+                "name": "BoxOutline|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "BoxOutline|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "BoxOutline|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "236": {
+            "link": {
+                "name": "BoxOutline|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "237": {
+            "link": {
+                "name": "BoxOutline|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "238": {
+            "link": {
+                "name": "BoxOutline|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "239": {
+            "link": {
+                "name": "BoxChrome|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "240": {
+            "link": {
+                "name": "BoxChrome|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "241": {
+            "link": {
+                "name": "BoxChrome|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "242": {
+            "link": {
+                "name": "BoxChrome|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "243": {
+            "link": {
+                "name": "BoxChrome|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "244": {
+            "link": {
+                "name": "BoxChrome|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "245": {
+            "link": {
+                "name": "BoxChrome|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "246": {
+            "link": {
+                "name": "BoxChrome|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "247": {
+            "link": {
+                "name": "BoxChrome|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "248": {
+            "link": {
+                "name": "BoxChrome|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "249": {
+            "link": {
+                "name": "BoxChrome|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "250": {
+            "link": {
+                "name": "Cup|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "251": {
+            "link": {
+                "name": "Cup|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "252": {
+            "link": {
+                "name": "Cup|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "253": {
+            "link": {
+                "name": "Cup|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "254": {
+            "link": {
+                "name": "Cup|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "255": {
+            "link": {
+                "name": "Cup|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "256": {
+            "link": {
+                "name": "Cup|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "257": {
+            "link": {
+                "name": "Cup|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "258": {
+            "link": {
+                "name": "Cup|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "259": {
+            "link": {
+                "name": "Cup|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "260": {
+            "link": {
+                "name": "Cup|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "261": {
+            "link": {
+                "name": "BallSucker|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "262": {
+            "link": {
+                "name": "BallSucker|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "263": {
+            "link": {
+                "name": "BallSucker|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "264": {
+            "link": {
+                "name": "BallSucker|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "265": {
+            "link": {
+                "name": "BallSucker|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "266": {
+            "link": {
+                "name": "BallSucker|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "267": {
+            "link": {
+                "name": "BallSucker|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "268": {
+            "link": {
+                "name": "BallSucker|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "269": {
+            "link": {
+                "name": "BallSucker|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "270": {
+            "link": {
+                "name": "BallSucker|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "271": {
+            "link": {
+                "name": "BallSucker|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "272": {
+            "link": {
+                "name": "Arrow|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "273": {
+            "link": {
+                "name": "Arrow|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "274": {
+            "link": {
+                "name": "Arrow|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "275": {
+            "link": {
+                "name": "Arrow|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "276": {
+            "link": {
+                "name": "Arrow|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "277": {
+            "link": {
+                "name": "Arrow|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "278": {
+            "link": {
+                "name": "Arrow|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "279": {
+            "link": {
+                "name": "Arrow|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "280": {
+            "link": {
+                "name": "Arrow|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "281": {
+            "link": {
+                "name": "Arrow|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "282": {
+            "link": {
+                "name": "Arrow|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "283": {
+            "link": {
+                "name": "Ball|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "284": {
+            "link": {
+                "name": "Ball|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "285": {
+            "link": {
+                "name": "Ball|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "286": {
+            "link": {
+                "name": "Ball|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "287": {
+            "link": {
+                "name": "Ball|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "288": {
+            "link": {
+                "name": "Ball|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "289": {
+            "link": {
+                "name": "Ball|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "290": {
+            "link": {
+                "name": "Ball|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "291": {
+            "link": {
+                "name": "Ball|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "292": {
+            "link": {
+                "name": "Ball|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "293": {
+            "link": {
+                "name": "Ball|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "294": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "295": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "296": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "297": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "298": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "299": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "300": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "301": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "302": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "303": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "304": {
+            "link": {
+                "name": "Pipe_Bend(Glass)|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "305": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|Arrow|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "306": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|BallSucker|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "307": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|Ball|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "308": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|BoxChrome|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "309": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|BoxOutline|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "310": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "311": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|Pipe_Bend(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "312": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|Pipe_Straight(Glass)|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "313": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|Proxy_Bend|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "314": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|Proxy_Cup|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "315": {
+            "link": {
+                "name": "Pipe_Straight(Glass)|Proxy_Straight|Base Stack|DefaultLayer",
+                "file": "models\\AllObjects.fbx"
+            }
+        }
+    },
+    "skins": {},
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "44": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        }
+    },
+    "textures": {
+        "63": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\pipedown.glb"
+            }
+        },
+        "129": {
+            "link": {
+                "name": "sky.png",
+                "file": "images\\sky.png"
+            }
+        },
+        "133": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "134": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\AllObjects.fbx"
+            }
+        },
+        "135": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\AllObjects.fbx"
+            }
+        }
+    },
+    "images": {
+        "60": {
+            "link": {
+                "name": "Rim",
+                "file": "models\\pipedown.glb"
+            },
+            "compress": false
+        },
+        "61": {
+            "link": {
+                "name": "Crate",
+                "file": "models\\pipedown.glb"
+            },
+            "compress": false
+        },
+        "62": {
+            "link": {
+                "name": "CrateInner",
+                "file": "models\\pipedown.glb"
+            },
+            "compress": false
+        },
+        "128": {
+            "link": {
+                "name": "sky.png",
+                "file": "images\\sky.png"
+            },
+            "compress": false
+        },
+        "130": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\AllObjects.fbx"
+            },
+            "compress": false
+        },
+        "131": {
+            "link": {
+                "name": "image_1",
+                "file": "models\\AllObjects.fbx"
+            },
+            "compress": false
+        },
+        "132": {
+            "link": {
+                "name": "image_2",
+                "file": "models\\AllObjects.fbx"
+            },
+            "compress": false
+        }
+    },
+    "fonts": {
+        "55": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "files": [
+        "models/pipedown.glb",
+        "images/sky.png",
+        "models/AllObjects.fbx"
+    ]
+}
